@@ -1,6 +1,8 @@
 let path = require('path'),
-    convert = require('../src');
+    remove_en = require('../');
 
+var files = [
+    path.join(__dirname,'test.md')
+]
 
-
-convert.loadFile([path.join(__dirname,'test.md')]);
+remove_en.loadFile(files);
