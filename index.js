@@ -1,5 +1,5 @@
-let fs = require('fs'),
-    debug = require('debug')('replace');
+let fs = require('fs');
+
 
 // set the expression to replace code
 const FLAG = '1f234sf哈d13llcin34jldfx';
@@ -42,8 +42,6 @@ function hideCode(str){
         return match;
     }
     str = str.replace(code,replacer);
-    debug('hide code return '+str.slice(100));
-    debug('and the code_container is '+code_container.slice(30));
     return {str,code_container};
 }
 function backCode(str,codes) {
@@ -54,8 +52,6 @@ function backCode(str,codes) {
         }
         return match;
     }
-    debug('the code_container is '+codes);
-    debug('in Code the replacer could match ',str.match(FLAG_exp).length);
     return str.replace(FLAG_exp,replacer);
 }
 
