@@ -1,20 +1,25 @@
 {
   "name": "remove_en",
   "version": "1.0.0",
-  "description": "",
+  "description": "该库主要是用来将 markdwon 格式中的英文段落删除。",
   "main": "index.js",
   "directories": {
+    "example": "example",
     "test": "test"
   },
   "dependencies": {},
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "debug": "^2.2.0",
-    "mocha": "^3.1.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmyVV/removeEn.git"
   },
   "author": "JimmyVV",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimmyVV/removeEn/issues"
+  },
+  "homepage": "https://github.com/JimmyVV/removeEn#readme"
 }
